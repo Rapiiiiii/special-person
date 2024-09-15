@@ -1,0 +1,142 @@
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bukaa ajaa nayy</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .perkenalan {
+        position: absolute;
+        font-size: 50px;
+        left: 555px;
+        top: 30px;
+      }
+
+      .pertanyaan {
+        position: absolute;
+        top: 90px;
+        font-size: 45px;
+        left: 350px;
+      }
+
+      .love {
+        position: absolute;
+        font-size: 60px;
+        top: 140px;
+        left: 700px;
+        color: red;
+      }
+
+      .btnGroup {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        top: 270px;
+        left: -20px;
+      }
+
+      .mw {
+        position: absolute;
+        width: 70px;
+        height: 30px;
+        left: 560px;
+      }
+
+      .gmw {
+        position: absolute;
+        width: 70px;
+        height: 30px;
+        right: 560px;
+       }
+
+      @media screen and (max-width: 634px) {
+        .perkenalan {
+          position: absolute;
+          font-size: 50px;
+          left: 165px;
+          top: 30px;
+        }
+
+        .pertanyaan {
+          position: absolute;
+          top: 90px;
+          font-size: 30px;
+          left: 145px;
+          text-align: center;
+        }
+
+        .love {
+          position: absolute;
+          font-size: 60px;
+          top: 160px;
+          left: 250px;
+          color: red;
+        }
+
+  /      .btnGroup {
+          position: relative;
+          display: flex;
+          justify-content: center;
+          top: 270px;
+          left: 10px;
+        }
+
+        .mw {
+          position: absolute;
+          width: 70px;
+          height: 30px;
+          left: 80px;
+          background-color:cyan
+        }
+
+        .gmw {
+          position: absolute;
+          width: 70px;
+          height: 30px;
+          right: 80px;
+          background-color:red
+        }
+      }
+
+    </style>
+  </head>
+  <body>
+    <!-- ganti teks disini -->
+    <h1 class="perkenalan">Aloo bocill</h1>
+    <h1 class="pertanyaan">Will you be my lover? </h1>
+    <h1 class="love">❤</h1>
+    <!-- ganti teks disini -->
+    <div class="btnGroup">
+      <button class="mw" onclick="mw()">Mw</button>
+      <button id="gmw" class="gmw" onclick="gmw()">gmw</button>
+    </div>
+<audio autoplay>
+  <source src="tacwm.mp3" type="audio/mp3" />"
+</audio>
+    <script>
+      const x = document.querySelector("button.gmw");
+      x.addEventListener("click", function () {
+        const i = Math.floor(Math.random() * 200) + 1;
+        const j = Math.floor(Math.random() * 200) + 1;
+
+        x.style.left = i + "px";
+        x.style.top = j + "px";
+      });
+
+      // ganti kata-kata disini
+      function mw() {
+        alert(`makasii yaa cill`);
+        alert(`ehh nayaa deng`);
+        alert(`langsung wa ajaa😋`);
+        location.assign(
+          "https://wa.me/6285784649316?text=Yes,%20I%20would%20love%20to%20be%20your%20lover"
+        );
+      }
+    </script>
+  </body>
+</html>
